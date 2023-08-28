@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatisplus
+    username: root
+    password: houzipashu.123
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      #配置逻辑删除字段，和deleted属性上的@TableLogic(value = "0",delval = "1")注解意思相同
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
