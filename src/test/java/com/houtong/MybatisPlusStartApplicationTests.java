@@ -157,4 +157,8 @@ class MybatisPlusStartApplicationTests {
         List<User> users = userService.list();
         System.out.println(users);
     }
+    @Test
+    void newTest(){
+        System.out.println("another function2");
+    }
 }
