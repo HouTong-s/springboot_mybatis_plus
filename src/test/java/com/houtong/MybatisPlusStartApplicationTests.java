@@ -159,6 +159,7 @@ class MybatisPlusStartApplicationTests {
     }
     @Test
     void newTest(){
+        System.out.println("function1");
         System.out.println("another function2");
     }
 }
